@@ -11,3 +11,10 @@
 * Command - команды
 * Query - запросы
 
+UI реализован в T1ConsoleApp.UI.
+Основной класс - ConsoleUI.cs, реализован как BackgroundService.
+
+UI классы:
+* Menu - меню (add, get, exit)
+* AddTransactionForm - добавление транзакции
+* GetTransactionForm - получение транзакции по Id
