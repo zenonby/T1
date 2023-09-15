@@ -1,20 +1,27 @@
-﻿Солюшн - T1.sln
+# CQRS example.
+## Overview
+Simple console application which implements two use cases:
+* adding a transaction (command)
+* getting a transaction by its ID (query)
 
-Основные проекты:
-* Консольное приложение - T1ConsoleApp
-* Проект тестов - T1Test
+## Project structure
+Solution - T1.sln
 
-Другие проекты:
-* Abstractions - интерфейсы
-* Model - сущности (транзакция)
-* Db - БД в памяти
-* Command - команды
-* Query - запросы
+Main projects:
+* Console application which demonstrates CQRS - T1ConsoleApp
+* Test project - T1Test
 
-UI реализован в T1ConsoleApp.UI.
-Основной класс - ConsoleUI.cs, реализован как BackgroundService.
+Other projects:
+* Abstractions - interfaces used across the project
+* Model - entities (actually just one entity: Transaction)
+* Db - in memory DB/storage
+* Command - as the name suggests, commands
+* Query - queries, as it stands
 
-UI классы:
-* Menu - меню (add, get, exit)
-* AddTransactionForm - добавление транзакции
-* GetTransactionForm - получение транзакции по Id
+UI is implemented in T1ConsoleApp.UI.
+Main UI class is ConsoleUI.cs, which is implemented as BackgroundService.
+
+Other UI classes:
+* Menu - "add", "get", "exit" commands
+* AddTransactionForm - for adding a transaction
+* GetTransactionForm - for getting a transaction by its ID
