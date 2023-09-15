@@ -14,7 +14,7 @@ Main projects:
 Other projects:
 * Abstractions - interfaces used across the project
 * Model - entities (actually just one entity: Transaction)
-* Db - in memory DB/storage
+* Db - in-memory DB/storage
 * Command - as the name suggests, commands
 * Query - queries, as it stands
 
